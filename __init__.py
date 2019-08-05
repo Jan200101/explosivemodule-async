@@ -41,7 +41,7 @@ class asyncmodule:
         await destination.trigger_typing(*args, **kwargs)
 
     async def wait_for_message(self, *args, **kwargs):
-        return await bot.wait_for('message', *args, **kwargs)
+        return await self.bot.wait_for('message', *args, **kwargs)
 
 
 def init():
